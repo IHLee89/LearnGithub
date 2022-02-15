@@ -227,3 +227,14 @@ int CLearnGithubDlg::CalcDiv(int a, int b)
 {
 	return a / b;
 }
+
+int CLearnGithubDlg::CalcPow(int a, int b)
+{
+	int result = 1;
+	
+	for (int i = 0; i < b; ++b)
+	{
+		result = result * a;
+	}
+	return result;
+}

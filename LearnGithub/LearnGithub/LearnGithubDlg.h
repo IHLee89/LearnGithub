@@ -47,4 +47,5 @@ public:
 	int CalcSub(int a, int b);	// 빼기
 	int CalcMul(int a, int b);	// 곱하기
 	int CalcDiv(int a, int b);	// 나누기
+	int CalcPow(int a, int b);	// 제곱
 };
