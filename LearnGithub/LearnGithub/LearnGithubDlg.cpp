@@ -222,3 +222,8 @@ int CLearnGithubDlg::CalcMul(int a, int b)
 {
 	return a * b;
 }
+
+int CLearnGithubDlg::CalcDiv(int a, int b)
+{
+	return a / b;
+}
