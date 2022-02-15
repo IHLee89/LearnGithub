@@ -65,6 +65,7 @@ BEGIN_MESSAGE_MAP(CLearnGithubDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_MSG_BTN, &CLearnGithubDlg::OnBnClickedMsgBtn)
 END_MESSAGE_MAP()
 
 
@@ -153,3 +154,9 @@ HCURSOR CLearnGithubDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CLearnGithubDlg::OnBnClickedMsgBtn()
+{
+	AfxMessageBox(_T("Button clicked!!"));
+}
