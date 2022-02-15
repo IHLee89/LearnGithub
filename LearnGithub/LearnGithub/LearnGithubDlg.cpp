@@ -180,7 +180,7 @@ void CLearnGithubDlg::OnBnClickedResetBtn()
 {
 	int nCount = m_event_list.GetCount();
 	CString csMsg;
-	csMsg.Format(_T("Total %02d contents removed"), nCount);
+	csMsg.Format(_T("Number of contents removed : %02d"), nCount); // 수정한부분
 
 	m_event_list.ResetContent();
 	AfxMessageBox(csMsg);
