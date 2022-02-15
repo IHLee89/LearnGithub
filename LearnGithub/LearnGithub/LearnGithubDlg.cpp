@@ -166,7 +166,12 @@ HCURSOR CLearnGithubDlg::OnQueryDragIcon()
 void CLearnGithubDlg::OnBnClickedMsgBtn()
 {
 	//AfxMessageBox(_T("Button clicked!!"));
-	int index = m_event_list.InsertString(-1, _T("Button clicked!!"));
+	m_nBtnClickCounter++;
+
+	CString strMsg;
+	strMsg.Format(_T("Button clicked!! #%02d"), m_nBtnClickCounter);
+
+	int index = m_event_list.InsertString(-1, strMsg);
 	m_event_list.SetCurSel(index);
 }
 

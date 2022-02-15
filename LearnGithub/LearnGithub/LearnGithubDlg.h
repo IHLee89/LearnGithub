@@ -35,4 +35,6 @@ public:
 	afx_msg void OnBnClickedMsgBtn();
 	CListBox m_event_list;
 	afx_msg void OnBnClickedResetBtn();
+
+	int m_nBtnClickCounter = 0;
 };
