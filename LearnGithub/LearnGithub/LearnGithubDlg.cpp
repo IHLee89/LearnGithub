@@ -59,6 +59,7 @@ CLearnGithubDlg::CLearnGithubDlg(CWnd* pParent /*=nullptr*/)
 void CLearnGithubDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_LIST1, m_event_list);
 }
 
 BEGIN_MESSAGE_MAP(CLearnGithubDlg, CDialogEx)
@@ -158,5 +159,7 @@ HCURSOR CLearnGithubDlg::OnQueryDragIcon()
 
 void CLearnGithubDlg::OnBnClickedMsgBtn()
 {
-	AfxMessageBox(_T("Button clicked!!"));
+	//AfxMessageBox(_T("Button clicked!!"));
+	int index = m_event_list.InsertString(-1, _T("Button clicked!!"));
+	m_event_list.SetCurSel(index);
 }
