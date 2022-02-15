@@ -180,10 +180,14 @@ void CLearnGithubDlg::OnBnClickedResetBtn()
 {
 	int nCount = m_event_list.GetCount();
 	CString csMsg;
-	csMsg.Format(_T("Total %02d contents removed"), nCount);
+	
+	if (IDYES == AfxMessageBox(_T("Clear contents?"), MB_YESNO))
+	{
+		csMsg.Format(_T("Total %02d contents removed"), nCount);
+		m_event_list.ResetContent();
 
-	m_event_list.ResetContent();
-	AfxMessageBox(csMsg);
+		AfxMessageBox(csMsg);
 
-	m_nBtnClickCounter = 0;
+		m_nBtnClickCounter = 0;
+	}
 }
