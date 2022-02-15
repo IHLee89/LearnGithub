@@ -60,6 +60,7 @@ void CLearnGithubDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_LIST1, m_event_list);
+	DDX_Control(pDX, IDC_EDIT, m_edit_out);
 }
 
 BEGIN_MESSAGE_MAP(CLearnGithubDlg, CDialogEx)
@@ -68,6 +69,7 @@ BEGIN_MESSAGE_MAP(CLearnGithubDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_MSG_BTN, &CLearnGithubDlg::OnBnClickedMsgBtn)
 	ON_BN_CLICKED(IDC_RESET_BTN, &CLearnGithubDlg::OnBnClickedResetBtn)
+	ON_BN_CLICKED(IDC_CNT_BTN, &CLearnGithubDlg::OnBnClickedCntBtn)
 END_MESSAGE_MAP()
 
 
@@ -108,6 +110,8 @@ BOOL CLearnGithubDlg::OnInitDialog()
 
 	strDate.Format(_T("Today : %04d-%02d-%02d"), cTime.GetYear(), cTime.GetMonth(), cTime.GetDay());
 	SetDlgItemText(IDC_STATIC, strDate);
+
+	m_edit_out.SetWindowTextW(_T("0"));
 
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
@@ -194,4 +198,12 @@ void CLearnGithubDlg::OnBnClickedResetBtn()
 int CLearnGithubDlg::AddNumbers(int n)
 {
 	return n * (n + 1) / 2;
+}
+
+
+void CLearnGithubDlg::OnBnClickedCntBtn()
+{
+	CString strTemp;
+	strTemp.Format(_T("%d"), m_nBtnClickCounter);
+	m_edit_out.SetWindowTextW(strTemp);
 }
