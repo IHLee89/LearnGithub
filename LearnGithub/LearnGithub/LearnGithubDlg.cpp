@@ -183,9 +183,8 @@ void CLearnGithubDlg::OnBnClickedResetBtn()
 	
 	if (IDYES == AfxMessageBox(_T("Clear contents?"), MB_YESNO))
 	{
-		csMsg.Format(_T("Total %02d contents removed"), nCount);
 		m_event_list.ResetContent();
-
+		csMsg.Format(_T("Number of contents removed : %02d"), nCount); // 수정한부분
 		AfxMessageBox(csMsg);
 
 		m_nBtnClickCounter = 0;
