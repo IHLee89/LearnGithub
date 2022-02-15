@@ -217,3 +217,8 @@ int CLearnGithubDlg::CalcSub(int a, int b)
 {
 	return a - b;
 }
+
+int CLearnGithubDlg::CalcMul(int a, int b)
+{
+	return a * b;
+}

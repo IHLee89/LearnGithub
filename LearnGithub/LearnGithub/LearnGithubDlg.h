@@ -45,4 +45,5 @@ public:
 
 	int CalcSum(int a, int b);	// 더하기
 	int CalcSub(int a, int b);	// 빼기
+	int CalcMul(int a, int b);	// 곱하기
 };
