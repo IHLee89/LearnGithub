@@ -67,6 +67,7 @@ BEGIN_MESSAGE_MAP(CLearnGithubDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_MSG_BTN, &CLearnGithubDlg::OnBnClickedMsgBtn)
+	ON_BN_CLICKED(IDC_RESET_BTN, &CLearnGithubDlg::OnBnClickedResetBtn)
 END_MESSAGE_MAP()
 
 
@@ -162,4 +163,10 @@ void CLearnGithubDlg::OnBnClickedMsgBtn()
 	//AfxMessageBox(_T("Button clicked!!"));
 	int index = m_event_list.InsertString(-1, _T("Button clicked!!"));
 	m_event_list.SetCurSel(index);
+}
+
+
+void CLearnGithubDlg::OnBnClickedResetBtn()
+{
+	m_event_list.ResetContent();
 }

@@ -9,6 +9,8 @@
 #define IDR_MAINFRAME                   128
 #define IDC_MSG_BTN                     1000
 #define IDC_LIST1                       1001
+#define IDC_MSG_BTN2                    1002
+#define IDC_RESET_BTN                   1002
 
 // Next default values for new objects
 // 
