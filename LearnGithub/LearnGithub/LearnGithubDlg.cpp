@@ -169,4 +169,5 @@ void CLearnGithubDlg::OnBnClickedMsgBtn()
 void CLearnGithubDlg::OnBnClickedResetBtn()
 {
 	m_event_list.ResetContent();
+	AfxMessageBox(_T("Reset content!"));
 }
