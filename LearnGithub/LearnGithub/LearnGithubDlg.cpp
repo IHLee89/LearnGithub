@@ -212,3 +212,8 @@ int CLearnGithubDlg::CalcSum(int a, int b)
 {
 	return a + b;
 }
+
+int CLearnGithubDlg::CalcSub(int a, int b)
+{
+	return a - b;
+}

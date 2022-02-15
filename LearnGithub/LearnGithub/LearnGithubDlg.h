@@ -43,5 +43,6 @@ public:
 	afx_msg void OnBnClickedCntBtn();
 	CEdit m_edit_out;
 
-	int CalcSum(int a, int b);
+	int CalcSum(int a, int b);	// 더하기
+	int CalcSub(int a, int b);	// 빼기
 };
