@@ -39,6 +39,9 @@ public:
 	int m_nBtnClickCounter = 0;
 
 	int AddNumbers(int n);
+
 	afx_msg void OnBnClickedCntBtn();
 	CEdit m_edit_out;
+
+	int CalcSum(int a, int b);
 };

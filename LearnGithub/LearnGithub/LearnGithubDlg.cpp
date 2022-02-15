@@ -207,3 +207,8 @@ void CLearnGithubDlg::OnBnClickedCntBtn()
 	strTemp.Format(_T("%d"), m_nBtnClickCounter);
 	m_edit_out.SetWindowTextW(strTemp);
 }
+
+int CLearnGithubDlg::CalcSum(int a, int b)
+{
+	return a + b;
+}
