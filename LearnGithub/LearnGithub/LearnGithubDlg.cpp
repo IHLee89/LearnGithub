@@ -190,3 +190,13 @@ void CLearnGithubDlg::OnBnClickedResetBtn()
 		m_nBtnClickCounter = 0;
 	}
 }
+
+int CLearnGithubDlg::AddNumbers(int n)
+{
+	int result = 0;
+
+	for (int i = 1; i < n + 1; i++)
+		result += i;
+
+	return result;
+}

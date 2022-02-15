@@ -37,4 +37,6 @@ public:
 	afx_msg void OnBnClickedResetBtn();
 
 	int m_nBtnClickCounter = 0;
+
+	int AddNumbers(int n);
 };
