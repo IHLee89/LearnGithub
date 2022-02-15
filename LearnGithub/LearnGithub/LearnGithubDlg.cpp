@@ -245,5 +245,6 @@ int CLearnGithubDlg::CalcPow(int a, int b)
 	{
 		result = result * a;
 	}
+
 	return result;
 }
