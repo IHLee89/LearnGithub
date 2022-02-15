@@ -225,5 +225,5 @@ int CLearnGithubDlg::CalcMul(int a, int b)
 
 int CLearnGithubDlg::CalcDiv(int a, int b)
 {
-	return a / b;
+	return int (a / b);
 }
